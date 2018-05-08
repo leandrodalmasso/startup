@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Sign Up!</title>
+  </head>
+  <body>
+    <!-- main header -->
+    <header>
+      <h1>Sign Up!</h1>
+    </header>
+    <!-- main content -->
+    <main>
+      <form action="http://www.something.com" method="post">
+        <h2>Sign Up Form</h2>
+        <p>Required fields are followed by <strong><abbr title="Required.">*</abbr></strong>.</p>
+        <div>
+          <label for="firstName">First Name:</label>
+          <strong><abbr title="Required.">*</abbr></strong>
+          <input type="text" id="firstName" name="user_firstName" required>
+        </div>
+        <div>
+          <label for="lastName">Last Name:</label>
+          <strong><abbr title="Required.">*</abbr></strong>
+          <input type="text" id="lastName" name="user_lastName" required>
+        </div>
+        <div>
+          <label for="mail">Email:</label>
+          <strong><abbr title="Required.">*</abbr></strong>
+          <input type="email" id="mail" name="user_mail" required>
+        </div>
+        <div>
+          <label for="birthday">Birthday:</label>
+          <strong><abbr title="Required.">*</abbr></strong>
+          <input type="date" id="birthday" name="user_birthday" required>
+        </div>
+        <div>
+          <label for="favouriteSport">Favourite Sport:</label>
+          <strong><abbr title="Required.">*</abbr></strong>
+          <select id="favouriteSport" name="user_favouriteSport" required>
+            <option value="" selected>Select something from the list...</option>
+            <option value="soccer">Soccer</option>
+            <option value="tennis">Tennis</option>
+            <option value="basketball">Basketball</option>
+          </select>
+        </div>
+        <div>
+          <label for="bio">Small Bio:</label>
+          <strong><abbr title="Required.">*</abbr></strong>
+          <textarea id="bio" name="user_bio" maxlength="250" required></textarea>
+        </div>
+        <div>
+          <button type="submit" name="button_submit">Submit</button>
+          <button type="reset" name="button_reset">Clear</button>
+        </div>
+      </form>
+    </main>
+    <!-- main footer -->
+    <footer>
+      <p>Leandro Dalmasso &copy; 2018</p>
+    </footer>
+  </body>
+</html>

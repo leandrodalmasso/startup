@@ -1,0 +1,17 @@
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+header, footer, aside, nav {
+  background: #f4f4f4;
+}
+
+header, footer {
+  text-align: center;
+}
+
+section header, section footer {
+  background: none;
+  text-align: left;
+}

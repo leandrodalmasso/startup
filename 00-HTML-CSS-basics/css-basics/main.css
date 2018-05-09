@@ -43,3 +43,7 @@ section header, section footer {
 [class*="a"]:not([class$="r"]) {
   background: blue;
 }
+
+.oh-no-inline-styles {
+  background: green !important;
+}

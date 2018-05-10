@@ -16,6 +16,30 @@ section header, section footer {
   text-align: left;
 }
 
+nav {
+  float: left;
+  width: 20%;
+}
+
+aside {
+  float: right;
+  width: 20%;
+}
+
+section {
+  width: 60%;
+  margin: 0 auto;
+}
+
+h1 {
+  margin: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .header {
   font-size: 46px;
 }

@@ -16,35 +16,21 @@ section header, section footer {
   text-align: left;
 }
 
-nav {
-  float: left;
-  width: 20%;
-}
-
-aside {
-  float: right;
-  width: 20%;
-}
-
-section {
-  width: 60%;
-  margin: 0 auto;
-}
-
 h1 {
   margin: 0;
 }
 
-.container {
-  width: 80%;
-  margin: 0 auto;
-}
-
 .header {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
   font-size: 46px;
 }
 
 .footer {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
   font-size: 10px;
 }
 
@@ -70,4 +56,28 @@ h1 {
 
 .oh-no-inline-styles {
   background: green !important;
+}
+
+.container {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container section {
+  width: 60%;
+}
+
+.container nav, .container aside {
+  width: 15%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .container nav, .container section, .container aside {
+    width: 100%;
+  }
 }

@@ -89,7 +89,7 @@ Reusable function to perform AJAX calls. This function accepts a config object a
 */
 
 // config = {method: "GET", url: "url"}
-function makeAJAXCall(config, callback) {
+function makeAJAXCall(config) {
   // Create the promise object
   let promiseObj = new Promise(function(resolve, reject) {
     let xhr = new XMLHttpRequest();

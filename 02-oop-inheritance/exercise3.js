@@ -101,7 +101,6 @@ Movie {
 
 let logger = new Logger();
 terminator.on('play', logger.log);
-console.log(terminator);
 terminator.play();
 
 /*

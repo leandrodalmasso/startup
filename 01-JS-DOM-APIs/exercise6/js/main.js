@@ -7,13 +7,6 @@ let schedule = [
   ["Friday", "Breakfast", "Work", "Weeeeeeeee!"],  
 ];
 
-/*
-console.log(schedule[0].length);
-console.log(schedule[0]);
-console.log(schedule[0][0].length);
-console.log(schedule[0][0]);
-*/
-
 function createTable(array, rows) {
   let table = document.createElement("table");
 

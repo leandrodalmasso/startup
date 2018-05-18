@@ -1,7 +1,7 @@
 function makeAJAXCall(keyword) {
   let promiseObj = new Promise(function(resolve, reject) {
     let xhr = new XMLHttpRequest();
-    xhr.open("GET", "https://api.github.com/search/repositories?q=" + keyword);
+    xhr.open("GET", `https://api.github.com/search/repositories?q=${keyword}`);
     xhr.send();
     xhr.onreadystatechange = function() {
       if (xhr.readyState == 4) {

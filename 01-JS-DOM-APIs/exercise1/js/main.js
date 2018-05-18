@@ -4,6 +4,10 @@ function fadein(section) {
   }
 }
 
+function fadeinSection(section) {
+  fadein(section);
+}
+
 let helloWorldSection = document.getElementById("hello-world");
 
-document.addEventListener("load", fadein(helloWorldSection));
+document.addEventListener("load", fadeinSection(helloWorldSection));

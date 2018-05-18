@@ -4,12 +4,15 @@ function fadein(section) {
   }
 }
 
+function fadeinSection(section) {
+  fadein(section);
+}
+
 let helloWorldSection = document.getElementById("hello-world");
 
-document.addEventListener("load", fadein(helloWorldSection));
+document.addEventListener("load", fadeinSection(helloWorldSection));
 
-/*
-Fetch a joke and write it inside the section element.
+// Fetch a joke
 
 function getJoke() {
   // Make an instance of XMLHttpRequest. Using the instance we can trigger the XHR call and get the response.
@@ -43,14 +46,7 @@ function getJoke() {
   };
 }
 
-let getJokeButton = document.getElementById("get-joke-button");
-
-getJokeButton.addEventListener("click", getJoke);
-
-*/
-
-/*
-Callback
+// Callback
 
 function makeAJAXCall(url, methodType, callback) {
   let xhr = new XMLHttpRequest();
@@ -66,7 +62,6 @@ function makeAJAXCall(url, methodType, callback) {
       } else {
         console.log("xhr failed");
       }
-
     } else {
       console.log("xhr processing going on");
     }
@@ -78,15 +73,7 @@ function changeJokeParagraph(response) {
   paragraph.innerHTML = response.value.joke;  
 }
 
-let getJokeButton = document.getElementById("get-joke-button");
-
-getJokeButton.addEventListener("click", () => makeAJAXCall("http://api.icndb.com/jokes/random", "GET", changeJokeParagraph));
-
-*/
-
-/*
-Reusable function to perform AJAX calls. This function accepts a config object and returns an ES6 Promise.
-*/
+// Reusable function to perform AJAX calls. This function accepts a config object and returns an ES6 Promise.
 
 // config = {method: "GET", url: "url"}
 function makeAJAXCall(config) {
@@ -108,9 +95,6 @@ function makeAJAXCall(config) {
           reject(Error(xhr.statusText));
           console.log("xhr failed");
         }
-  
-      } else {
-        console.log("xhr processing going on");
       }
     };
   });

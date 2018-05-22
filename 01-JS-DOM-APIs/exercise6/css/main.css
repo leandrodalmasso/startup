@@ -1,0 +1,12 @@
+.header {
+  text-align: center;
+}
+
+.section {
+  min-height: 500px;
+}
+
+.footer {
+  clear: both;  
+  text-align: center;
+}

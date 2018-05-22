@@ -1,0 +1,77 @@
+/* ======== .html block ======== */
+
+.html {
+  height: 100%;
+}
+
+/* ======== .body block ======== */
+
+.body {
+  height: 100%;
+}
+
+/* ======== .header block ======== */
+
+.header {
+  height: 20%;
+}
+
+/* block elements */
+
+.header__h1 {
+  margin: 0;  
+  text-align: center;
+}
+
+
+/* ======== .section block ======== */
+
+.section {
+  height: 60%;
+}
+
+/* block elements */
+
+.section__h2 {
+  margin: 0;  
+  font-size: 60px;
+  text-align: center;
+}
+
+.section__button {
+  display: block;
+  margin: auto;
+}
+
+/* modifiers */
+
+.section_transparency_full {
+  opacity: 0;
+}
+
+.section_transparency_none {
+  opacity: 1;
+}
+
+.section_transparency_fadein {
+  opacity: 1;
+
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+   -ms-transition: opacity 2s ease-in;
+    -o-transition: opacity 2s ease-in;
+       transition: opacity 2s ease-in;
+}
+
+/* ======== .footer block ======== */
+
+.footer {
+  height: 20%;
+}
+
+/* block elements */
+
+.footer__p {
+  margin: 0;
+  text-align: center;
+}

@@ -4,13 +4,9 @@ function fadein(section) {
   }
 }
 
-function fadeinSection(section) {
-  fadein(section);
-}
-
 let helloWorldSection = document.getElementById("hello-world");
 
-document.addEventListener("load", fadeinSection(helloWorldSection));
+window.addEventListener("load", () => fadein(helloWorldSection));
 
 function showAlert() {
   alert("Great! Now press OK.");

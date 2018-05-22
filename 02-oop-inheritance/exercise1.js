@@ -6,15 +6,15 @@ class Movie {
   }
 
   play() {
-    console.log(this.name + ' is playing...');
+    console.log(`${this.name} is playing...`);
   }
 
   pause() {
-    console.log(this.name + ' is in pause...');
+    console.log(`${this.name} is in pause...`);
   }
 
   resume() {
-    console.log(this.name + ' is playing again...');
+    console.log(`${this.name} is playing again...`);
   }
 }
 

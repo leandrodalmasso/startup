@@ -1,0 +1,15 @@
+h1 {
+  text-align: center;
+}
+
+label {
+  width: 50%;
+  text-align: right;
+  display: block;
+  margin: 10px auto;
+}
+
+input[type="submit"] {
+  display: block;
+  margin: 10px auto;  
+}

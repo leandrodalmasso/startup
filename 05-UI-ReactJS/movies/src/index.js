@@ -2,8 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import NewMovieForm from './NewMovieForm';
+import List from './List';
 
 ReactDOM.render(
-  <NewMovieForm />,
+  <List />,
   document.getElementById('root')
 );

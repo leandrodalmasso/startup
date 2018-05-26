@@ -13,3 +13,8 @@ input[type="submit"] {
   display: block;
   margin: 10px auto;  
 }
+
+ul {
+  width: 400px;
+  margin: 10px auto;  
+}

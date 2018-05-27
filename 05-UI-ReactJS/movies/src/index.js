@@ -4,8 +4,9 @@ import './index.css';
 import NewMovieForm from './NewMovieForm';
 import List from './List';
 import EditMovieForm from './EditMovieForm';
+import DeleteMovie from './DeleteMovie'
 
 ReactDOM.render(
-  <EditMovieForm />,
+  <DeleteMovie />,
   document.getElementById('root')
 );

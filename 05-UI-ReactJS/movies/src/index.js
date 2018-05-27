@@ -7,6 +7,6 @@ import EditMovieForm from './EditMovieForm';
 import DeleteMovie from './DeleteMovie'
 
 ReactDOM.render(
-  <DeleteMovie />,
+  <EditMovieForm />,
   document.getElementById('root')
 );

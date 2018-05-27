@@ -47,9 +47,12 @@ class EditMovieForm extends React.Component {
         duration: this.state.duration
       };
 
-      const index = this.state.id - 1;
+      const movies = this.state.movies;
+      const index = movies.find(
+        (element) => (element.title === this.state.title)
+      );
       
-      const moviesEdited = this.state.movies;
+      const moviesEdited = movies;
       moviesEdited.splice(index, 1, movieEdited);
 
       this.setState({

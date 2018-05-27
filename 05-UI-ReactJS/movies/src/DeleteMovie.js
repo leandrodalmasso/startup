@@ -28,7 +28,10 @@ class DeleteMovie extends React.Component {
   }
 
   handleSubmit(event) {
-    const index = this.state.id - 1;
+    const movies = this.state.movies;
+    const index = movies.find(
+      (element) => (element.title === this.state.title)
+    );
       
     const moviesEdited = this.state.movies;
     moviesEdited.splice(index, 1);

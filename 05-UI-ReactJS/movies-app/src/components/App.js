@@ -209,8 +209,6 @@ class App extends React.Component {
 
     if (showNewMovie) {
       content = <NewMovie
-        movies={this.state.movies}
-        id={this.state.id}
         title={this.state.title}
         year={this.state.year}
         duration={this.state.duration}
@@ -221,10 +219,6 @@ class App extends React.Component {
     } else if (showMovieDetail) {
       content = <MovieDetail
         movies={this.state.movies}
-        id={this.state.id}
-        title={this.state.title}
-        year={this.state.year}
-        duration={this.state.duration}
         index={this.state.index}
         onDeleteClick={this.handleDeleteMovie}
         onEditClick={this.handleShowEditMovie}
@@ -232,8 +226,6 @@ class App extends React.Component {
       />;
     } else if (showEditMovie) {
         content = <EditMovie
-          movies={this.state.movies}
-          id={this.state.id}
           title={this.state.title}
           year={this.state.year}
           duration={this.state.duration}

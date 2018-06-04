@@ -33,11 +33,20 @@ function UserProfile({error, isLoading, user, url}) {
     )
   );
 
+  if (isLoading) {
+    return (
+      <Message text="LOADING..."/>
+    );
+  }
+
+  if (error) {
+    return (
+      <Message text={error.message}/>
+    );
+  }
+
   return (
     <div className="user-profile">
-      {isLoading && <Message text="LOADING..."/>}
-      {error && <Message text={error.message}/>}
-
       <div className="user-info">
         <img
           alt={`${user.login} avatar`}

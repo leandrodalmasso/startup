@@ -18,7 +18,7 @@ function ReposList({array, error, isLoading, lastPage, onMoreClick, page}) {
   );
 
   return (
-    <div>
+    <div className="repos-list">
       <div className="list">
         {list}
       </div>

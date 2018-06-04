@@ -67,11 +67,11 @@ class TopTen extends React.Component {
           <h2>{'Check These Repos!'}</h2>
         </div>
         <div className="top-ten-list">
-        <TopTenReposList
-          array={this.state.repos}
-          error={this.state.error}
-          isLoading={this.state.isLoading}
-        />
+          <TopTenReposList
+            array={this.state.repos}
+            error={this.state.error}
+            isLoading={this.state.isLoading}
+          />
         </div>
       </div>
     );

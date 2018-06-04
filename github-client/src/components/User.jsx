@@ -17,12 +17,12 @@ class User extends React.Component {
     );
   }
 
-  fetchUser(value) {
+  fetchUser(username) {
     this.setState({
       isLoading: true,
     });
 
-    fetch(this.getGitHubUserUrl(value))
+    fetch(this.getGitHubUserUrl(username))
       .then(response => {
         if (response.ok) {
           return response.json()
@@ -49,6 +49,7 @@ class User extends React.Component {
       this.setState({
         error: null,
       });
+      
       this.fetchUser(this.props.match.params.username);
     }
   }

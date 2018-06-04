@@ -1,0 +1,48 @@
+.list-avatar {
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 40px;
+}
+
+.list-row h3 {
+  display: inline-block;
+  color: black;
+  margin: 0;
+  vertical-align: middle;
+}
+
+.list-row h3:hover {
+  color: #4078c0;
+}
+
+.list-row p {
+  margin: 0;
+}
+
+.repo-icon {
+  display: inline-block;
+}
+
+.repo-info {
+  display: inline-block;
+}
+
+.interactions {
+  text-align: center;
+}
+
+.page-button {
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background: #4078c0;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.page-button:hover {
+  color: #333;
+}

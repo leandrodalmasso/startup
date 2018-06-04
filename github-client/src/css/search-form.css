@@ -1,0 +1,30 @@
+.search-form {
+  margin: 20px 10px;
+  text-align: center;
+}
+
+.search-form h3 {
+  margin: 0 0 5px 0;
+}
+
+.search-form input {
+  padding: 10px;
+  border-radius: 5px;
+  outline: none;
+  margin: 5px;
+  border: 1px solid #dddddd;
+}
+
+.search-form button {
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background: #4078c0;
+  color: #fff;
+  cursor: pointer;
+  margin: 5px;
+  padding: 10px;
+}
+
+.search-form button:hover {
+  color: #333;
+}

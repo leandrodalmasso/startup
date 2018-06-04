@@ -1,0 +1,26 @@
+.home {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.5;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.home-image {
+  width: 100%;
+  margin: 40px 0 20px 0;
+}
+
+.home-text {
+  margin: 20px 0 40px 0;
+  width: 100%;
+}
+
+.home img {
+  width: 100%;
+}
+
+.home p {
+  margin: 0;
+}

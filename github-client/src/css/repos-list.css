@@ -1,0 +1,55 @@
+.list {
+  margin: 10px;
+}
+
+.list-row {
+  background-color: #fff;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.list-row a {
+  color: black;
+  display: inline-block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-decoration: none;
+}
+
+.list-row a:hover {
+  color: #4078c0;
+}
+
+.repo-icon img {
+  display: inline-block;
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;  
+  width: 40px;
+}
+
+.repo-info {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+}
+
+.interactions {
+  text-align: center;
+}
+
+.page-button {
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  background: #4078c0;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.page-button:hover {
+  color: #333;
+}

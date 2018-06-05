@@ -35,7 +35,7 @@ function UserProfile({error, isLoading, user, url}) {
 
   if (isLoading) {
     return (
-      <Message text="LOADING..."/>
+      <Message text="Loading..."/>
     );
   }
 

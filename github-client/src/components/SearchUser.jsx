@@ -16,9 +16,11 @@ class SearchUser extends React.Component {
   handleInputChange(e) {
     e.preventDefault();
 
-    this.setState({
-      username: e.target.value,
-    });
+    if (!e.target.value.includes('/')) {
+      this.setState({
+        username: e.target.value,
+      });
+    }
   }
 
   handleSearchClick(e) {

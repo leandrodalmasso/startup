@@ -16,9 +16,11 @@ class SearchTop extends React.Component {
   handleInputChange(e) {
     e.preventDefault();
 
-    this.setState({
-      keyword: e.target.value
-    });
+    if (!e.target.value.includes('/')) {
+      this.setState({
+        keyword: e.target.value,
+      });
+    }
   }
 
   handleSearchClick(e) {

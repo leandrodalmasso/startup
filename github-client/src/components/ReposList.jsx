@@ -23,9 +23,9 @@ function ReposList({array, error, isLoading, lastPage, onMoreClick, page}) {
         {list}
       </div>
 
-      {isLoading && <Message text="LOADING..."/>}
+      {isLoading && <Message text="Loading..."/>}
       {error && <Message text={error.message}/>}
-      {lastPage && <Message text="END OF RESULTS..."/>}
+      {lastPage && <Message text="End of results..."/>}
 
       <div className="interactions">
         <button

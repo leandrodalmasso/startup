@@ -4,7 +4,6 @@ import image from '../images/repo.png'
 import '../css/repos-list.css';
 
 function TopTenReposList({array, error, isLoading}) {
-
   const list = array.map(item =>
     <div className="list-row" key={item.id}>
       <div className="repo-icon">
@@ -17,18 +16,25 @@ function TopTenReposList({array, error, isLoading}) {
     </div>
   );
 
+  
   if (isLoading) {
     return (
-      <Message text="LOADING..."/>
+      <Message text="Loading..."/>
     );
   }
-
+  
   if (error) {
     return (
       <Message text={error.message}/>
     );
   }
-
+  
+  if (Object.keys(list).length === 0) {
+    return (
+      <Message text="No results have been found. Look for something else..."/>
+    );
+  }
+  
   return (
     <div className="list">
       {list}
